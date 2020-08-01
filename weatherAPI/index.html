@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wather API Project</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="">
+      <h1 class="text-6xl text-gray-800 text-center m-8">
+        Weather API Project
+      </h1>
+      <hr />
+    </div>
+    <div class="flex justify-center mt-8">
+      <form id="search-weather" class="w-full max-w-xl">
+        <div class="flex items-center border-b border-teal-500 py-2">
+          <input
+            id="city-value"
+            class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+            type="text"
+            placeholder="City"
+            aria-label="City"
+          />
+          <input
+            id="state-value"
+            class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+            type="text"
+            placeholder="State"
+            aria-label="State"
+          />
+          <button
+            class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded"
+            type="submit"
+          >
+            Find Weather
+          </button>
+        </div>
+      </form>
+    </div>
+    <div id="city-forecast"></div>
+
+    <script src="ui.js"></script>
+    <script src="api.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
