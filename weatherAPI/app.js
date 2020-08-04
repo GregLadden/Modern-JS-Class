@@ -1,4 +1,4 @@
-// const ui = new UI();
+const ui = new UI();
 const weatherAPI = new WeatherAPI();
 
 // weatherAPI.weather();
@@ -12,5 +12,6 @@ city.addEventListener("submit", function (e) {
 
   weatherAPI.weather(cityValue, stateValue).then((data) => {
     console.log(data.res);
+    ui.showWeather(data.res);
   });
 });
